@@ -1,7 +1,8 @@
-#Desc:-
-Features :- 
+# Description
 
-STUDENTS :- 
+## Features
+
+### STUDENTS :- 
 1. It can handle any number of users.(sky is the limit) 
 
 2. The application will never ever slow down when lots of users use it. 
@@ -12,7 +13,7 @@ STUDENTS :-
 
 5. It will send you notifications before exam. 
 
-Faculty :- 
+### Faculty :- 
 
 1. They can upload questions and answers in form of Excel file. There is predefined excel file in which they have to fill all the details. Thn that can directly uploaded to server. 
 
@@ -24,7 +25,7 @@ Faculty :-
 
 5. Faculty can see real time update of exam - How many students attempting exam - Which student has completed how many questions. -Who didn't enroll in exam And there is call button in that tab so they can directly call them. 
 
-LOGIN:- 
+## LOGIN:- 
 
 1. OTP will be send on your number for login.
 
