@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "183847720886",
+    "firebase_url": "https://asoit-test.firebaseio.com",
+    "project_id": "asoit-test",
+    "storage_bucket": "asoit-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183847720886:android:8648f3763674a597d21317",
+        "android_client_info": {
+          "package_name": "com.asoit.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183847720886-dt508jklads8chp0u2ldie8p0h8mnarm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.asoit.test",
+            "certificate_hash": "06e00463c698dc9ba82af2e90715b598a91980f7"
+          }
+        },
+        {
+          "client_id": "183847720886-fl68mkunoehvio27kkb3hpnvvhou9ch5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmZegOaryUkzAIc8SRCOt4iBVHJQwZqII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183847720886-fl68mkunoehvio27kkb3hpnvvhou9ch5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

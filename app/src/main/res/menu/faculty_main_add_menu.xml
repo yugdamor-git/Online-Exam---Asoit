@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_test_menu"
+        android:icon="@drawable/ic_wb_sunny_black_24dp"
+        android:title="Add Test"
+        android:orderInCategory="1"/>
+    <item android:title="add subject"
+        android:orderInCategory="2"/>
+</menu>

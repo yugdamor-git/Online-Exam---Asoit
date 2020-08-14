@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/faculty_navigation"
+    app:startDestination="@id/FacultyHomeFragment">
+
+    <fragment
+        android:id="@+id/FacultyHomeFragment"
+        android:name="com.asoit.test.faculty.home.FacultyHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_faculty_home">
+        <action
+            android:id="@+id/action_facultyHomeFragment_to_addTestFragment"
+            app:destination="@id/addTestFragment" />
+        <action
+            android:id="@+id/action_FacultyHomeFragment_to_addSubjectFragment"
+            app:destination="@id/addSubjectFragment" />
+        <action
+            android:id="@+id/action_FacultyHomeFragment_to_testDetailsFragment"
+            app:destination="@id/testDetailsFragment" />
+        <action
+            android:id="@+id/action_FacultyHomeFragment_to_selectSemFragment"
+            app:destination="@id/selectSemFragment" />
+        <action
+            android:id="@+id/action_FacultyHomeFragment_to_addStudentsFragment"
+            app:destination="@id/addStudentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FacultyProfileFragment"
+        android:name="com.asoit.test.faculty.profile.FacultyProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_faculty_profile" />
+    <fragment
+        android:id="@+id/addTestFragment"
+        android:name="com.asoit.test.faculty.test.AddTestFragment"
+        android:label="Add test"
+        tools:layout="@layout/fragment_add_test" >
+        <action
+            android:id="@+id/action_addTestFragment_to_FacultyHomeFragment"
+            app:destination="@id/FacultyHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSubjectFragment"
+        android:name="com.asoit.test.faculty.test.AddSubjectFragment"
+        android:label="Add subject"
+        tools:layout="@layout/fragment_add_subject" />
+    <fragment
+        android:id="@+id/testDetailsFragment"
+        android:name="com.asoit.test.faculty.test.testdetails.TestDetailsFragment"
+        android:label="TEST DATA"
+        tools:layout="@layout/fragment_test_details">
+        <argument
+            android:name="test_id"
+            android:defaultValue="null"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/allTestFragment"
+        android:name="com.asoit.test.faculty.home.alltest.AllTestFragment"
+        android:label="ALL TEST"
+        tools:layout="@layout/fragment_all_test">
+        <action
+            android:id="@+id/action_allTestFragment_to_testDetailsFragment"
+            app:destination="@id/testDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectSemFragment"
+        android:name="com.asoit.test.faculty.home.alltest.subjectwise.SelectSemFragment"
+        android:label="SELECT SEMESTER"
+        tools:layout="@layout/fragment_select_sem">
+        <action
+            android:id="@+id/action_selectSemFragment_to_selectSubjectFragment"
+            app:destination="@id/selectSubjectFragment" />
+        <argument
+            android:name="branch_code"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectSubjectFragment"
+        android:name="com.asoit.test.faculty.home.alltest.subjectwise.SelectSubjectFragment"
+        android:label="SELECT SUBJECT"
+        tools:layout="@layout/fragment_select_subject">
+        <action
+            android:id="@+id/action_selectSubjectFragment_to_selectTestFragment"
+            app:destination="@id/selectTestFragment" />
+        <argument
+            android:name="branch_code"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="semester"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectTestFragment"
+        android:name="com.asoit.test.faculty.home.alltest.subjectwise.SelectTestFragment"
+        android:label="SELECT TEST"
+        tools:layout="@layout/fragment_select_test">
+        <action
+            android:id="@+id/action_selectTestFragment_to_testDetailsFragment"
+            app:destination="@id/testDetailsFragment" />
+        <argument
+            android:name="branch_code"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="semester"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="subject_code"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentsFragment"
+        android:name="com.asoit.test.faculty.home.addstudents.AddStudentsFragment"
+        android:label="fragment_add_students"
+        tools:layout="@layout/fragment_add_students" />
+    <fragment
+        android:id="@+id/facultySettingFragment"
+        android:name="com.asoit.test.faculty.setting.FacultySettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_faculty_setting" />
+</navigation>

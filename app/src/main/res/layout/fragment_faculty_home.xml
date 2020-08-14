@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/faculty_home_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faculty.home.FacultyHomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_faculty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tablayout_round"
+            android:backgroundTint="#F6F6F6"
+            android:elevation="0dp"
+            android:textAlignment="center"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabMode="auto"
+            app:tabRippleColor="@color/colorAccent"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"
+            app:tabUnboundedRipple="false">
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager_faculty"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout_faculty" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.leinardi.android.speeddial.SpeedDialView
+        android:id="@+id/speeddail"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:pointerIcon="arrow"
+        app:sdExpansionMode="top"
+        app:sdMainFabClosedBackgroundColor="@color/colorPrimary"
+        app:sdMainFabClosedSrc="@drawable/ic_add_white_24dp"
+        app:sdMainFabOpenedBackgroundColor="@color/colorPrimary">
+
+    </com.leinardi.android.speeddial.SpeedDialView>
+
+
+</FrameLayout>

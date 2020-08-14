@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faculty.test.AddSubjectFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_subject_sem_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_bottom_navigation"
+            android:gravity="center"
+            android:text="Select semester" />
+
+        <Button
+            android:id="@+id/add_subject_branch_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_bottom_navigation"
+            android:gravity="center"
+            android:text="Select Branch" />
+
+        <EditText
+            android:id="@+id/add_subject_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_bottom_navigation"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter subject name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/add_subject_code_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_bottom_navigation"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter subject code"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/add_subject_submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_bottom_navigation"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:text="submit"
+            android:textColor="@color/login_bk_color" />
+    </LinearLayout>
+</FrameLayout>

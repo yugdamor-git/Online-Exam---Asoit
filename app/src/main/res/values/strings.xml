@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Asoit Test</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="title_activity_faculty_home_controller">FacultyHomeController</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="add_test">add test</string>
+    <string name="submit">submit</string>
+    <string name="custom_view_title">Enter details</string>
+
+</resources>
